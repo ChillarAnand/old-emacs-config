@@ -182,7 +182,8 @@
 (defadvice windmove-right (before other-window-now activate)
   (when buffer-file-name (save-buffer)))
 
-
+;; auto remove python unused imports
+(require 'auto-remove)
 
 ;; init.el ends here
 

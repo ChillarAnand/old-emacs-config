@@ -2,7 +2,7 @@
 ;; --------------------------------------------------------------------------
 ;; Desktop File for Emacs
 ;; --------------------------------------------------------------------------
-;; Created Mon Aug 18 15:02:26 2014
+;; Created Mon Aug 18 16:54:20 2014
 ;; Desktop file format version 206
 ;; Emacs version 24.3.1
 
@@ -17,10 +17,21 @@
 
 ;; Buffer section -- buffers listed in same order as in buffer list:
 (desktop-create-buffer 206
+  "/home/k3/.emacs.d/README.markdown"
+  "README.markdown"
+  'markdown-mode
+  '(auto-fill-mode flyspell-mode)
+  25
+  '(1 nil)
+  nil
+  nil
+  '((buffer-file-coding-system . undecided-unix)))
+
+(desktop-create-buffer 206
   "/home/k3/.emacs.d/init.el"
   "init.el"
   'emacs-lisp-mode
-  '(auto-fill-mode paredit-mode eldoc-mode hi-lock-mode)
+  '(auto-fill-mode auto-complete-mode paredit-mode eldoc-mode hi-lock-mode)
   4852
   '(4978 nil)
   nil
