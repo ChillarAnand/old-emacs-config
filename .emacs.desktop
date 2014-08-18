@@ -1,0 +1,73 @@
+;; -*- mode: emacs-lisp; coding: emacs-mule; -*-
+;; --------------------------------------------------------------------------
+;; Desktop File for Emacs
+;; --------------------------------------------------------------------------
+;; Created Mon Aug 18 15:02:26 2014
+;; Desktop file format version 206
+;; Emacs version 24.3.1
+
+;; Global section:
+(setq desktop-missing-file-warning nil)
+(setq tags-file-name nil)
+(setq tags-table-list nil)
+(setq search-ring nil)
+(setq regexp-search-ring nil)
+(setq register-alist '((114 file . "/home/k3/.emacs.d/starter-kit-registers.el") (98 file . "/home/k3/.emacs.d/starter-kit-bindings.el") (105 file . "/home/k3/.emacs.d/init.el")))
+(setq file-name-history '("/home/k3/project_pearl/pearl/apps/project/admin.py" "/home/k3/project_pearl/pearl/apps/project/models.py" "/home/k3/project_pearl/pearl/apps/home/views.py" "/home/k3/project_pearl/pearl/Untitled0.ipynb" "/home/k3/work/project_pearl/pearl/apps/project/tests/test_views.py" "~/.emacs.d/" "/home/k3/pearl.org" "/home/k3/2.org" "~/.emacs.d/" "~/" "/home/k3/work/project_pearl/pearl/apps/project/tests/test_forms.py" "~/.ido.last" "~/work/project_pearl/pearl/apps/project/tests/test_views.py" "~/work/project_pearl/pearl/apps/project/views.py" "~/work/project_pearl/pearl/apps/project/urls.py" "~/.emacs.d/init.el" "~/work/a.lisp"))
+
+;; Buffer section -- buffers listed in same order as in buffer list:
+(desktop-create-buffer 206
+  "/home/k3/.emacs.d/init.el"
+  "init.el"
+  'emacs-lisp-mode
+  '(auto-fill-mode paredit-mode eldoc-mode hi-lock-mode)
+  4852
+  '(4978 nil)
+  nil
+  nil
+  '((buffer-file-coding-system . undecided-unix) (column-number-mode . t)))
+
+(desktop-create-buffer 206
+  "/home/k3/project_pearl/pearl/apps/project/models.py"
+  "models.py"
+  'python-mode
+  '(flymake-mode auto-complete-mode ropemacs-mode)
+  1735
+  '(571 nil)
+  nil
+  nil
+  '((tab-width . 4) (indent-tabs-mode) (buffer-file-coding-system . undecided-unix)))
+
+(desktop-create-buffer 206
+  "/home/k3/project_pearl/pearl/apps/project/admin.py"
+  "admin.py"
+  'python-mode
+  '(flymake-mode auto-complete-mode ropemacs-mode)
+  1
+  '(nil nil)
+  nil
+  nil
+  '((tab-width . 4) (indent-tabs-mode) (buffer-file-coding-system . undecided-unix)))
+
+(desktop-create-buffer 206
+  "/home/k3/project_pearl/pearl/apps/home/views.py"
+  "views.py"
+  'python-mode
+  '(flymake-mode auto-complete-mode ropemacs-mode)
+  185
+  '(186 nil)
+  nil
+  nil
+  '((tab-width . 4) (indent-tabs-mode) (buffer-file-coding-system . undecided-unix)))
+
+(desktop-create-buffer 206
+  "/home/k3/project_pearl/pearl/Untitled0.ipynb"
+  "Untitled0.ipynb"
+  'fundamental-mode
+  nil
+  1
+  '(nil nil)
+  nil
+  nil
+  '((buffer-file-coding-system . undecided-unix)))
+
