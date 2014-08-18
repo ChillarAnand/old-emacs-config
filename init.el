@@ -26,6 +26,11 @@
 
 (add-to-list 'load-path (concat dotfiles-dir "/elpa-to-submit"))
 
+(setq autoload-file (concat dotfiles-dir "loaddefs.el"))
+(setq package-user-dir (concat dotfiles-dir "elpa"))
+(setq custom-file (concat dotfiles-dir "custom.el"))
+
+
 ;; for removing the warning at startup 
 (add-to-list 'load-path "~/.emacs.d/lisp/")
 
@@ -131,17 +136,6 @@
 ;; The above is default in emacsen
 
 
-;; ;; web browsing
-;; ;;change default browser for 'browse-url'  to w3m
-;; (setq browse-url-browser-function 'w3m-goto-url-new-session)
- 
-;; ;;change w3m user-agent to android
-;; (setq w3m-user-agent "Mozilla/5.0 (Linux; U; Android 2.3.3; zh-tw; HTC_Pyramid Build/GRI40) AppleWebKit/533.1 (KHTML, like Gecko) Version/4.0 Mobile Safari/533.")
- 
-;; ;;quick access hacker news
-;; (defun hn ()
-;;   (interactive)
-;;   (browse-url "http://news.ycombinator.com"))
 
 ;; save desktop
 (desktop-save-mode 1)
@@ -182,6 +176,21 @@
 (defadvice windmove-right (before other-window-now activate)
   (when buffer-file-name (save-buffer)))
 
+
+;;highlight unused python imports
+(when (load "flymake" t) 
+         (defun flymake-pyflakes-init () 
+           (let* ((temp-file (flymake-init-create-temp-buffer-copy 
+                              'flymake-create-temp-inplace)) 
+              (local-file (file-relative-name 
+                           temp-file 
+                           (file-name-directory buffer-file-name)))) 
+             (list "pyflakes" (list local-file)))) 
+
+         (add-to-list 'flymake-allowed-file-name-masks 
+                  '("\\.py\\'" flymake-pyflakes-init))) 
+
+   (add-hook 'find-file-hook 'flymake-find-file-hook)
 
 
 ;; init.el ends here
