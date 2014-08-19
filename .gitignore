@@ -20,4 +20,11 @@ elpa-to-submit/nxhtml/etc/schema/xhtml-loader.rnc~
 session*
 tramp
 \#*
-history
+.emacs.desktop.lock
+ac-comphist.dat
+eproject.lst
+eshell/
+ido.last
+menu_log.notes
+recentf
+
