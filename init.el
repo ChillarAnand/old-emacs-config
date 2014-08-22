@@ -142,18 +142,15 @@
 
 
 ;; OPEN TERMINAL
-(global-set-key [f9] 'ansi-term)
+(global-set-key [f9] 'multi-term)
 
 
 ;; real auto save 
 (require 'real-auto-save)
 (add-hook 'text-mode-hook 'turn-on-real-auto-save)
 (add-hook 'muse-mode-hook 'turn-on-real-auto-save)
-
 (setq real-auto-save-interval 5) ;; in seconds
-
 (turn-on-real-auto-save)
-
 
 
 ;; auto save buffers - while switching buffers
@@ -192,6 +189,17 @@
 
    (add-hook 'find-file-hook 'flymake-find-file-hook)
 
+
+;; auto format
+;; (require 'auto-format)
+
+;; show column number
+(setq column-number-mode t)
+(setq multi-term-program "/bin/zsh")
+
+
+;; multi term
+(require 'multi-term)
 
 ;; init.el ends here
 
